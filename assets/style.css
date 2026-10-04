@@ -1,0 +1,768 @@
+/* =========================================================================
+   CMB — Coleta de Material Biológico
+   Base, microinterações, animações de scroll e layout responsivo
+   ========================================================================= */
+
+/* ---------- Base (Tailwind preflight está desativado) ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #1e3322;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif;
+  overflow-x: clip;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid #2d6b3f;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* o scroll-sticky exige que o contêiner raiz não corte overflow */
+#page-root {
+  overflow: visible;
+}
+
+[id] {
+  scroll-margin-top: 96px;
+}
+
+/* ---------- Barra de progresso de leitura ---------- */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 200;
+  pointer-events: none;
+}
+
+.scroll-progress span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #2d6b3f, #6aa87c);
+  transition: width 0.1s linear;
+}
+
+/* ---------- Nav fixa ---------- */
+[data-pencil-name="Nav"] {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px) saturate(1.5);
+  -webkit-backdrop-filter: blur(14px) saturate(1.5);
+  transition: box-shadow 0.35s ease, padding 0.35s ease;
+}
+
+[data-pencil-name="Nav"].is-stuck {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  box-shadow: 0 1px 0 rgba(30, 51, 34, 0.08), 0 14px 34px -26px rgba(30, 51, 34, 0.55);
+}
+
+/* sublinhado que varre os itens do menu */
+#menu-principal a {
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+#menu-principal a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -7px;
+  height: 1px;
+  background: #2d6b3f;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#menu-principal a:hover {
+  color: #1e3322;
+}
+
+#menu-principal a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* hambúrguer */
+.nav-toggle {
+  display: none;
+  width: 40px;
+  height: 34px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 6px;
+}
+
+.nav-toggle__bar {
+  display: block;
+  width: 20px;
+  height: 1.5px;
+  background: #1e3322;
+  transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+.nav-open .nav-toggle__bar:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+
+.nav-open .nav-toggle__bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-open .nav-toggle__bar:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
+
+/* ---------- Botões ---------- */
+[data-pencil-name="Botão Primário"],
+[data-pencil-name="Botão Inscreva-se"],
+.mobile-cta__primary {
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+[data-pencil-name="Botão Primário"]:hover,
+[data-pencil-name="Botão Inscreva-se"]:hover,
+.mobile-cta__primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 26px -16px rgba(45, 107, 63, 0.85);
+}
+
+[data-pencil-name="Botão Secundário"] {
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+[data-pencil-name="Botão Secundário"]:hover {
+  transform: translateY(-2px);
+  background: rgba(30, 51, 34, 0.05);
+  border-color: rgba(30, 51, 34, 0.55) !important;
+}
+
+/* ---------- Cartões ---------- */
+[data-pencil-name^="Resultado "],
+[data-pencil-name^="Item "],
+[data-pencil-name^="Depoimento "] {
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[data-pencil-name^="Resultado "]:hover,
+[data-pencil-name^="Item "]:hover,
+[data-pencil-name^="Depoimento "]:hover {
+  transform: translateY(-5px);
+}
+
+[data-pencil-name^="Pergunta "] {
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+[data-pencil-name^="Pergunta "]:hover {
+  background: #f4f6f3;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+/* ---------- Zona fotográfica: scrim + anéis pulsantes ---------- */
+[data-pencil-name="Zona Fotográfica"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(30, 51, 34, 0.55) 0%,
+    rgba(30, 51, 34, 0.22) 45%,
+    rgba(30, 51, 34, 0.7) 100%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+[data-pencil-name="Indicadores"] {
+  z-index: 4;
+}
+
+[data-pencil-name="Arco técnico"],
+[data-pencil-name="Arco técnico 2"] {
+  animation: anel-pulsa 9s ease-in-out infinite;
+}
+
+[data-pencil-name="Arco técnico 2"] {
+  animation-duration: 13s;
+  animation-direction: reverse;
+}
+
+@keyframes anel-pulsa {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.035);
+  }
+}
+
+[data-pencil-name="Overlay Flutuante"] {
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s ease;
+}
+
+[data-pencil-name="Overlay Flutuante"]:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px -30px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- Contato ---------- */
+.contato-rodape {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.contato-rodape__link {
+  font-size: 14px;
+  color: #6b7b6b;
+  width: fit-content;
+  background-image: linear-gradient(#2d6b3f, #2d6b3f);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0 1px;
+  transition: background-size 0.35s cubic-bezier(0.22, 1, 0.36, 1), color 0.25s ease;
+}
+
+.contato-rodape__link:hover {
+  color: #2d6b3f;
+  background-size: 100% 1px;
+}
+
+.cta-contato {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.72);
+  text-align: center;
+  max-width: 640px;
+  margin-inline: auto;
+}
+
+.cta-contato a {
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  transition: border-color 0.25s ease, color 0.25s ease;
+}
+
+.cta-contato a:hover {
+  border-color: #ffffff;
+}
+
+[data-pencil-name="Nota"] a,
+[data-pencil-name="Parágrafo 2"] a {
+  color: #2d6b3f;
+  border-bottom: 1px solid rgba(45, 107, 63, 0.4);
+  transition: border-color 0.25s ease;
+}
+
+[data-pencil-name="Nota"] a:hover {
+  border-color: #2d6b3f;
+}
+
+/* =========================================================================
+   Animações de entrada (progressivo: só existem se o JS rodar)
+   ========================================================================= */
+.js .reveal {
+  opacity: 0;
+  transform: translate3d(0, 26px, 0);
+  transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1) var(--d, 0ms),
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1) var(--d, 0ms);
+  will-change: opacity, transform;
+}
+
+.js .reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+.js [data-pencil-name="Régua"] {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.22s;
+}
+
+.js .is-in [data-pencil-name="Régua"],
+.js .is-in[data-pencil-name="Régua"] {
+  transform: scaleX(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .js .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .js [data-pencil-name="Régua"] {
+    transform: none !important;
+  }
+
+  [data-pencil-name="Arco técnico"],
+  [data-pencil-name="Arco técnico 2"] {
+    animation: none;
+  }
+
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* =========================================================================
+   CTA fixo no celular
+   ========================================================================= */
+.mobile-cta {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .mobile-cta {
+    display: flex;
+    gap: 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 120;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 -14px 34px -26px rgba(30, 51, 34, 0.75);
+    transform: translateY(120%);
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .mobile-cta.is-visible {
+    transform: translateY(0);
+  }
+
+  .mobile-cta__primary {
+    flex: 1 1 0;
+    text-align: center;
+    background: #2d6b3f;
+    color: #ffffff;
+    padding: 14px 16px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .mobile-cta__ghost {
+    flex: 0 0 auto;
+    text-align: center;
+    border: 1px solid rgba(30, 51, 34, 0.35);
+    color: #1e3322;
+    padding: 14px 16px;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+
+  body {
+    padding-bottom: 76px;
+  }
+}
+
+/* =========================================================================
+   Responsivo — até 1080px: coluna única
+   ========================================================================= */
+@media (max-width: 1439px) {
+  #page-root {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1080px) {
+  /* quebra o nowrap do layout desktop */
+  [class*="white-space:nowrap"] {
+    white-space: normal;
+  }
+
+  [class*="flex:1_1_0"] {
+    flex: 0 0 auto;
+  }
+
+  /* ---- Nav ---- */
+  [data-pencil-name="Nav"] {
+    padding: 16px 24px;
+  }
+
+  [data-pencil-name="Nav"].is-stuck {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  [data-pencil-name="Botão Inscreva-se"] {
+    display: none;
+  }
+
+  [data-pencil-name="Links"] {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 6px 0 10px;
+    background: rgba(255, 255, 255, 0.98);
+    border-top: 1px solid rgba(30, 51, 34, 0.08);
+    box-shadow: 0 26px 46px -30px rgba(30, 51, 34, 0.6);
+  }
+
+  [data-pencil-name="Nav"].nav-open [data-pencil-name="Links"] {
+    display: flex;
+  }
+
+  #menu-principal a {
+    padding: 14px 24px;
+    font-size: 15.5px;
+  }
+
+  #menu-principal a::after {
+    display: none;
+  }
+
+  /* ---- Hero ---- */
+  [data-pencil-name="Hero"] {
+    padding: 56px 24px 44px;
+    gap: 34px;
+  }
+
+  [data-pencil-name="Conteúdo do Hero"] {
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  [data-pencil-name="Bloco de Título"] {
+    gap: 18px;
+  }
+
+  [data-pencil-name="Título Principal"] {
+    font-size: clamp(40px, 10vw, 58px);
+    line-height: 1.05;
+  }
+
+  [data-pencil-name="Bloco de Ação"] {
+    width: 100%;
+    gap: 22px;
+  }
+
+  [data-pencil-name="Descritor"] {
+    font-size: 16.5px;
+    line-height: 1.6;
+  }
+
+  [data-pencil-name="Eyebrow"],
+  [data-pencil-name="Índice"] {
+    letter-spacing: 2px;
+    line-height: 1.6;
+  }
+
+  [data-pencil-name="Legenda da Figura"] {
+    letter-spacing: 1.6px;
+  }
+
+  [data-pencil-name="Ações"] {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  /* ---- Zona fotográfica ---- */
+  [data-pencil-name="Zona Fotográfica"] {
+    height: auto;
+    min-height: 440px;
+    padding: 44px 24px;
+  }
+
+  [data-pencil-name="Arco técnico"],
+  [data-pencil-name="Arco técnico 2"],
+  [data-pencil-name="Indicadores"] {
+    display: none;
+  }
+
+  [data-pencil-name="Overlay Flutuante"] {
+    width: 100%;
+    flex-direction: column;
+    gap: 18px;
+    padding: 26px 24px;
+  }
+
+  [data-pencil-name^="Estatística"] {
+    width: 100%;
+  }
+
+  [data-pencil-name^="Divisor"] {
+    width: 100%;
+    height: 1px;
+  }
+
+  [data-pencil-name="Valor"] {
+    font-size: 40px;
+  }
+
+  /* ---- Seções ---- */
+  [data-pencil-name^="Seção"] {
+    padding: 64px 24px;
+    gap: 38px;
+  }
+
+  [data-pencil-name="Cabeçalho"] {
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  [data-pencil-name="Coluna Título"],
+  [data-pencil-name="Coluna Descritiva"] {
+    width: 100%;
+    gap: 18px;
+  }
+
+  [data-pencil-name="Título da Seção"] {
+    width: 100%;
+    font-size: clamp(28px, 7vw, 36px);
+    line-height: 1.18;
+  }
+
+  [data-pencil-name="Resultados"],
+  [data-pencil-name="Itens Incluídos"],
+  [data-pencil-name="Depoimentos"],
+  [data-pencil-name="Perguntas"],
+  [data-pencil-name="Colunas do Formato"] {
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  [data-pencil-name="Coluna Esquerda"],
+  [data-pencil-name="Coluna Direita"] {
+    width: 100%;
+    gap: 34px;
+  }
+
+  [data-pencil-name="Divisor Vertical"] {
+    width: 100%;
+    height: 1px;
+  }
+
+  [data-pencil-name="Linha"] {
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    align-items: baseline;
+  }
+
+  [data-pencil-name="Carga"] {
+    font-size: 42px;
+  }
+
+  [data-pencil-name="Descrição"],
+  [data-pencil-name="Nota"] {
+    width: 100%;
+  }
+
+  [data-pencil-name="Título"] {
+    white-space: normal;
+  }
+
+  /* ---- CTA final ---- */
+  [data-pencil-name="CTA Final"] {
+    padding: 72px 24px;
+    gap: 26px;
+  }
+
+  [data-pencil-name="CTA Final"] [data-pencil-name="Título"] {
+    width: 100%;
+    font-size: clamp(30px, 7.5vw, 40px);
+    line-height: 1.18;
+  }
+
+  [data-pencil-name="CTA Final"] [data-pencil-name="Subtítulo"] {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  [data-pencil-name="CTA Final"] [data-pencil-name="Ações"] {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  [data-pencil-name="Anotações"] {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 22px;
+  }
+
+  /* ---- Rodapé ---- */
+  [data-pencil-name="Rodapé"] {
+    padding: 48px 24px 36px;
+    gap: 30px;
+  }
+
+  [data-pencil-name="Linha Superior"] {
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  [data-pencil-name="Links do Rodapé"] {
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+  }
+
+  [data-pencil-name="Rodapé"] [data-pencil-name="Marca"] {
+    width: 100%;
+  }
+
+  [data-pencil-name="Descrição"] {
+    width: 100%;
+  }
+
+  [data-pencil-name="Linha Inferior"] {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* =========================================================================
+   Responsivo — até 640px
+   ========================================================================= */
+@media (max-width: 640px) {
+  [data-pencil-name="Nav"] {
+    padding: 12px 20px;
+  }
+
+  [data-pencil-name="Título da marca"] {
+    font-size: 15.5px;
+  }
+
+  [data-pencil-name="Hero"] {
+    padding: 40px 20px 34px;
+    gap: 28px;
+  }
+
+  [data-pencil-name="Título Principal"] {
+    font-size: clamp(34px, 10vw, 44px);
+  }
+
+  [data-pencil-name^="Seção"] {
+    padding: 52px 20px;
+    gap: 32px;
+  }
+
+  [data-pencil-name="CTA Final"] {
+    padding: 56px 20px;
+  }
+
+  [data-pencil-name="Rodapé"] {
+    padding: 40px 20px 32px;
+  }
+
+  [data-pencil-name="Zona Fotográfica"] {
+    padding: 36px 20px;
+    min-height: 400px;
+  }
+
+  [data-pencil-name="Overlay Flutuante"] {
+    padding: 22px 20px;
+  }
+
+  [data-pencil-name="Valor"] {
+    font-size: 36px;
+  }
+
+  [data-pencil-name="Carga"] {
+    font-size: 36px;
+  }
+
+  [data-pencil-name="Botão Primário"],
+  [data-pencil-name="Botão Secundário"] {
+    width: 100%;
+    justify-content: center;
+  }
+
+  [data-pencil-name="Ações"] {
+    gap: 12px;
+  }
+
+  [data-pencil-name="Marca de Figura"] {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 420px) {
+  [data-pencil-name="Subtítulo da marca"] {
+    display: none;
+  }
+
+  [data-pencil-name="Links do Rodapé"] {
+    gap: 24px;
+  }
+}

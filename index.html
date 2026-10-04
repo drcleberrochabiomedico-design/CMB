@@ -2,46 +2,60 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Coleta de Material Biológico | Curso livre híbrido de 20 horas</title>
     <meta
       name="description"
-      content="Capacitação profissional em Coleta de Material Biológico: 12 horas on-line e 8 horas presenciais, apostila digital e certificado de 20 horas."
+      content="Capacitação profissional em Coleta de Material Biológico: 12 horas on-line, 8 horas presenciais, apostila digital e certificado de 20 horas. Turmas trimestrais — faça seu pré-cadastro."
     />
-    <script>
-      tailwind = { config: { corePlugins: { preflight: false } } };
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="theme-color" content="#2D6B3F" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Coleta de Material Biológico | Curso livre híbrido de 20 horas" />
+    <meta
+      property="og:description"
+      content="12h on-line + 8h presenciais. Aprenda a coletar, identificar e transportar amostras com segurança e rastreabilidade. Apostila e certificado inclusos."
+    />
+    <meta property="og:image" content="assets/hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Coleta de Material Biológico | Curso livre híbrido de 20 horas" />
+    <meta
+      name="twitter:description"
+      content="Curso livre híbrido de 20 horas: 12h on-line + 8h presenciais, apostila digital e certificado."
+    />
+    <meta name="twitter:image" content="assets/hero.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter%3Awght%40100..900&family=Newsreader%3Awght%40200..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap"
       rel="stylesheet"
     />
-    <style>
-      *, ::before, ::after {
-        box-sizing: border-box;
+    <link rel="stylesheet" href="assets/tailwind.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/main.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "Coleta de Material Biológico",
+        "description": "Capacitação profissional na modalidade curso livre, 20 horas, formato híbrido: 12 horas on-line e 8 horas presenciais.",
+        "inLanguage": "pt-BR",
+        "courseMode": ["online", "blended"],
+        "occupationalCredentialAwarded": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Certificado",
+          "description": "Certificado de conclusão de 20 horas"
+        },
+        "provider": {
+          "@type": "Organization",
+          "name": "Cursos Livres da Saúde",
+          "email": "cursoslivresdasaude@gmail.com",
+          "sameAs": ["https://www.instagram.com/cleber_rochabios/"]
+        }
       }
-
-      body {
-        margin: 0;
-        background: #ffffff;
-        overflow-x: hidden;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      #page-root {
-        transform-origin: top left;
-      }
-    </style>
+    </script>
+    <!-- estilos base, responsivo e animações: assets/style.css -->
   </head>
   <body>
     <div
@@ -49,7 +63,7 @@
       data-pencil-name="Página de Vendas — CMB"
       class="box-border w-[1440px] h-fit flex flex-col gap-0 justify-start items-start bg-[#FFFFFF] overflow-hidden"
     >
-      <div
+      <header
         data-pencil-name="Nav"
         class="box-border w-full h-fit shrink-0 flex flex-row gap-0 p-[26px_80px] justify-between items-center"
       >
@@ -86,8 +100,9 @@
             </div>
           </div>
         </div>
-        <div
-          data-pencil-name="Links"
+      <nav
+        id="menu-principal"
+        data-pencil-name="Links"
           class="box-border w-fit shrink-0 h-fit flex flex-row gap-[34px] justify-start items-center"
         >
           <a
@@ -125,7 +140,7 @@
           >
             FAQ
           </a>
-        </div>
+        </nav>
         <a
           data-pencil-name="Botão Inscreva-se"
           href="#pre-cadastro"
@@ -138,7 +153,19 @@
             Inscreva-se
           </div>
         </a>
-      </div>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </header>
+      <main class="w-full">
       <div
         data-pencil-name="Hero"
         class="box-border w-full h-fit shrink-0 flex flex-col gap-[56px] p-[76px_80px_56px_80px] justify-start items-start"
@@ -157,12 +184,12 @@
             >
               CAPACITAÇÃO PROFISSIONAL · CURSO LIVRE · MODALIDADE HÍBRIDA
             </div>
-            <div
+            <h1
               data-pencil-name="Título Principal"
               class="text-[70px]/[72px] box-border w-full text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left"
             >
               Coleta de Material Biológico
-            </div>
+            </h1>
             <div
               data-pencil-name="Marca de Figura"
               class="box-border w-fit h-fit shrink-0 flex flex-row gap-[12px] justify-start items-center"
@@ -183,14 +210,15 @@
             data-pencil-name="Bloco de Ação"
             class="box-border w-[420px] shrink-0 h-fit flex flex-col gap-[26px] justify-start items-start"
           >
-            <div
+            <p
               data-pencil-name="Descritor"
               class="text-[17px]/[27px] box-border w-full text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
             >
-              Aprenda a coletar, identificar, acondicionar e transportar amostras biológicas com
-              segurança, rastreabilidade e conformidade normativa. Uma trilha prática, do primeiro
-              tubo ao encaminhamento da amostra.
-            </div>
+              Capacitação prática para coletar, identificar, acondicionar e transportar amostras
+              com segurança, rastreabilidade e conformidade normativa. 20 horas que começam na
+              tela e terminam com a sua mão na coleta — do primeiro tubo ao encaminhamento ao
+              laboratório.
+            </p>
             <div
               data-pencil-name="Fatos"
               class="box-border w-full h-fit shrink-0 flex flex-col gap-[14px] justify-start items-start"
@@ -270,12 +298,12 @@
                 </div>
               </a>
             </div>
-            <div
+            <p
               data-pencil-name="Nota"
               class="text-[13px]/[normal] box-border text-[#808A80] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
             >
               Matrícula on-line · Vagas limitadas por turma
-            </div>
+            </p>
           </div>
         </div>
       </div>
@@ -326,12 +354,12 @@
             >
               12h
             </div>
-            <div
+            <p
               data-pencil-name="Descrição"
               class="text-[13.5px]/[20px] box-border w-full text-[#FFFFFFB3] font-[Inter,system-ui,sans-serif] font-normal text-left"
             >
               Aula on-line sob demanda
-            </div>
+            </p>
           </div>
           <div
             data-pencil-name="Divisor 0"
@@ -347,12 +375,12 @@
             >
               8h
             </div>
-            <div
+            <p
               data-pencil-name="Descrição"
               class="text-[13.5px]/[20px] box-border w-full text-[#FFFFFFB3] font-[Inter,system-ui,sans-serif] font-normal text-left"
             >
               Encontro presencial prático
-            </div>
+            </p>
           </div>
           <div
             data-pencil-name="Divisor 1"
@@ -368,12 +396,12 @@
             >
               20h
             </div>
-            <div
+            <p
               data-pencil-name="Descrição"
               class="text-[13.5px]/[20px] box-border w-full text-[#FFFFFFB3] font-[Inter,system-ui,sans-serif] font-normal text-left"
             >
               Certificado de conclusão
-            </div>
+            </p>
           </div>
         </div>
       </div>
@@ -396,32 +424,32 @@
             >
               01 — O CURSO
             </div>
-            <div
+            <h2
               data-pencil-name="Título da Seção"
               class="text-[42px]/[48px] box-border w-full text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left"
             >
               Norma, técnica e responsabilidade em cada coleta.
-            </div>
+            </h2>
           </div>
           <div
             data-pencil-name="Coluna Descritiva"
             class="box-border w-[480px] shrink-0 h-fit flex flex-col gap-[18px] justify-start items-start"
           >
-            <div
+            <p
               data-pencil-name="Parágrafo 1"
               class="text-[16px]/[26px] box-border w-full text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
             >
               O material biológico mal coletado compromete o exame, atrasa o diagnóstico e gera
-              retrabalho. Este curso prepara o profissional para executar a coleta com padrão, do
-              identifique do paciente até o acondicionamento da amostra.
-            </div>
-            <div
+              retrabalho. Este curso prepara o profissional para executar a coleta com padrão, da
+              identificação do paciente até o acondicionamento da amostra.
+            </p>
+            <p
               data-pencil-name="Parágrafo 2"
               class="text-[16px]/[26px] box-border w-full text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
             >
               A trilha é híbrida: você assiste à parte conceitual no seu ritmo e vive o prático no
               laboratório, com supervisão e checklist em mãos.
-            </div>
+            </p>
           </div>
         </div>
         <div
@@ -447,19 +475,19 @@
                 class="box-border [flex:1_1_0] h-[1px] bg-[#1E332224]"
               ></div>
             </div>
-            <div
+            <h3
               data-pencil-name="Título"
               class="text-[24px]/[normal] box-border text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
             >
               Coleta sem retrabalho
-            </div>
-            <div
+            </h3>
+            <p
               data-pencil-name="Descrição"
               class="text-[14.5px]/[23px] box-border w-full text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
             >
               Sequência padronizada de coleta, identificação e verificação da integralidade da
               amostra.
-            </div>
+            </p>
           </div>
           <div
             data-pencil-name="Resultado 02"
@@ -480,18 +508,18 @@
                 class="box-border [flex:1_1_0] h-[1px] bg-[#1E332224]"
               ></div>
             </div>
-            <div
+            <h3
               data-pencil-name="Título"
               class="text-[24px]/[normal] box-border text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
             >
               Segurança em 360°
-            </div>
-            <div
+            </h3>
+            <p
               data-pencil-name="Descrição"
               class="text-[14.5px]/[23px] box-border w-full text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
             >
               Normas de biossegurança, uso de EPI, conduta ante acidentes com material biológico.
-            </div>
+            </p>
           </div>
           <div
             data-pencil-name="Resultado 03"
@@ -512,18 +540,18 @@
                 class="box-border [flex:1_1_0] h-[1px] bg-[#1E332224]"
               ></div>
             </div>
-            <div
+            <h3
               data-pencil-name="Título"
               class="text-[24px]/[normal] box-border text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
             >
               Rastreabilidade real
-            </div>
-            <div
+            </h3>
+            <p
               data-pencil-name="Descrição"
               class="text-[14.5px]/[23px] box-border w-full text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
             >
               Pré-analítico sob controle: etiquetagem, cadeia frio, transporte e recusa de amostra.
-            </div>
+            </p>
           </div>
         </div>
       </div>
@@ -538,12 +566,12 @@
         >
           02 — FORMATO HÍBRIDO
         </div>
-        <div
+        <h2
           data-pencil-name="Título da Seção"
           class="text-[42px]/[48px] box-border w-[940px] text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left"
         >
           12 horas on-line. 8 horas presenciais. 20 horas para aplicar na segunda-feira.
-        </div>
+        </h2>
         <div
           id="ementa"
           data-pencil-name="Colunas do Formato"
@@ -864,20 +892,20 @@
             >
               03 — INCLUÍDO NA MATRÍCULA
             </div>
-            <div
+            <h2
               data-pencil-name="Título da Seção"
               class="text-[42px]/[48px] box-border w-full text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left"
             >
               Tudo o que o aluno recebe, do primeiro ao último dia.
-            </div>
+            </h2>
           </div>
-          <div
+          <p
             data-pencil-name="Nota"
             class="text-[16px]/[26px] box-border w-[420px] shrink-0 text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
           >
             Sem material adicional a comprar. A apostila e os checklists acompanham a turma por 12
             meses.
-          </div>
+          </p>
         </div>
         <div
           data-pencil-name="Itens Incluídos"
@@ -897,19 +925,19 @@
             >
               01
             </div>
-            <div
+            <h3
               data-pencil-name="Título"
               class="text-[23px]/[normal] box-border text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
             >
               Apostila digital
-            </div>
-            <div
+            </h3>
+            <p
               data-pencil-name="Descrição"
               class="text-[14.5px]/[23px] box-border w-full text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
             >
               PDF ilustrado com fluxos de coleta, imagens de referência e o passo a passo de cada
               procedimento.
-            </div>
+            </p>
           </div>
           <div
             data-pencil-name="Item 2"
@@ -925,18 +953,18 @@
             >
               02
             </div>
-            <div
+            <h3
               data-pencil-name="Título"
               class="text-[23px]/[normal] box-border text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
             >
               Checklists de campo
-            </div>
-            <div
+            </h3>
+            <p
               data-pencil-name="Descrição"
               class="text-[14.5px]/[23px] box-border w-full text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
             >
               Modelos prontos de verificação pré-analítica, etiquetagem e condições de transporte.
-            </div>
+            </p>
           </div>
           <div
             data-pencil-name="Item 3"
@@ -952,18 +980,18 @@
             >
               03
             </div>
-            <div
+            <h3
               data-pencil-name="Título"
               class="text-[23px]/[normal] box-border text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
             >
               Suporte do tutor
-            </div>
-            <div
+            </h3>
+            <p
               data-pencil-name="Descrição"
               class="text-[14.5px]/[23px] box-border w-full text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
             >
               Canal de dúvidas respondido durante toda a trilha on-line e no encontro presencial.
-            </div>
+            </p>
           </div>
           <div
             data-pencil-name="Item 4"
@@ -979,18 +1007,18 @@
             >
               04
             </div>
-            <div
+            <h3
               data-pencil-name="Título"
               class="text-[23px]/[normal] box-border text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
             >
               Certificado de 20h
-            </div>
-            <div
+            </h3>
+            <p
               data-pencil-name="Descrição"
               class="text-[14.5px]/[23px] box-border w-full text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
             >
               Emitido após frequência mínima e aprovação na avaliação final da turma.
-            </div>
+            </p>
           </div>
         </div>
       </div>
@@ -1005,12 +1033,12 @@
         >
           04 — QUEM JÁ PASSOU PELA TURMA
         </div>
-        <div
+        <h2
           data-pencil-name="Título da Seção"
           class="text-[42px]/[48px] box-border w-[860px] text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left"
         >
           A coleta é o começo de tudo. Quem faz, sente a diferença.
-        </div>
+        </h2>
         <div
           data-pencil-name="Depoimentos"
           class="box-border w-full h-fit shrink-0 flex flex-row gap-[44px] justify-start items-start"
@@ -1019,13 +1047,13 @@
             data-pencil-name="Depoimento 1"
             class="box-border [flex:1_1_0] h-fit flex flex-col gap-[20px] justify-start items-start"
           >
-            <div
+            <blockquote
               data-pencil-name="Citação"
               class="text-[20px]/[30px] box-border w-full text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-normal text-left"
             >
               “Entendi finalmente por que a amostra era rejeitada aqui no posto. Reduzimos o
               retrabalho depois da turma.”
-            </div>
+            </blockquote>
             <div
               data-pencil-name="Autor"
               class="box-border w-fit h-fit shrink-0 flex flex-col gap-[4px] justify-start items-start"
@@ -1048,13 +1076,13 @@
             data-pencil-name="Depoimento 2"
             class="box-border [flex:1_1_0] h-fit flex flex-col gap-[20px] justify-start items-start"
           >
-            <div
+            <blockquote
               data-pencil-name="Citação"
               class="text-[20px]/[30px] box-border w-full text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-normal text-left"
             >
               “A parte on-line é direta e o presencial mostra o que o vídeo não mostra: a mão na
               coleta.”
-            </div>
+            </blockquote>
             <div
               data-pencil-name="Autor"
               class="box-border w-fit h-fit shrink-0 flex flex-col gap-[4px] justify-start items-start"
@@ -1077,13 +1105,13 @@
             data-pencil-name="Depoimento 3"
             class="box-border [flex:1_1_0] h-fit flex flex-col gap-[20px] justify-start items-start"
           >
-            <div
+            <blockquote
               data-pencil-name="Citação"
               class="text-[20px]/[30px] box-border w-full text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-normal text-left"
             >
               “A apostila virou referência aqui dentro. Os checklists estão fixados em cada box de
               coleta.”
-            </div>
+            </blockquote>
             <div
               data-pencil-name="Autor"
               class="box-border w-fit h-fit shrink-0 flex flex-col gap-[4px] justify-start items-start"
@@ -1123,20 +1151,24 @@
             >
               05 — PERGUNTAS FREQUENTES
             </div>
-            <div
+            <h2
               data-pencil-name="Título da Seção"
               class="text-[42px]/[48px] box-border w-full text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left"
             >
               Antes de decidir, vale saber.
-            </div>
+            </h2>
           </div>
-          <div
+          <p
             data-pencil-name="Nota"
             class="text-[16px]/[26px] box-border w-[420px] shrink-0 text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
           >
-            Não encontrou sua dúvida? Fale com a coordenação pelo canal de atendimento da
-            instituição.
-          </div>
+            Não encontrou sua dúvida? Fale com a coordenação pelo
+            <a href="mailto:cursoslivresdasaude@gmail.com">e-mail</a>
+            ou pelo
+            <a href="https://www.instagram.com/cleber_rochabios/" target="_blank" rel="noopener noreferrer"
+              >Instagram @cleber_rochabios</a
+            >.
+          </p>
         </div>
         <div
           data-pencil-name="Perguntas"
@@ -1160,20 +1192,20 @@
                 >
                   01
                 </div>
-                <div
+                <h3
                   data-pencil-name="Pergunta"
                   class="text-[21px]/[normal] box-border [flex:1_1_0] text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left"
                 >
                   Preciso ter experiência prévia?
-                </div>
+                </h3>
               </div>
-              <div
+              <p
                 data-pencil-name="Resposta"
                 class="text-[15px]/[24px] box-border w-full text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
               >
                 Não. A trilha parte dos fundamentos do material biológico e do ciclo pré-analítico,
                 indo até a coleta supervisionada em laboratório.
-              </div>
+              </p>
               <div
                 data-pencil-name="Divisor"
                 class="box-border w-full h-[1px] shrink-0 bg-[#1E33221F]"
@@ -1193,20 +1225,20 @@
                 >
                   02
                 </div>
-                <div
+                <h3
                   data-pencil-name="Pergunta"
                   class="text-[21px]/[normal] box-border [flex:1_1_0] text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left"
                 >
                   Como funcionam as 12 horas on-line?
-                </div>
+                </h3>
               </div>
-              <div
+              <p
                 data-pencil-name="Resposta"
                 class="text-[15px]/[24px] box-border w-full text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
               >
                 Aulas gravadas na plataforma, no seu ritmo, com atividades de verificação ao final
                 de cada módulo e canal de dúvidas com o tutor.
-              </div>
+              </p>
               <div
                 data-pencil-name="Divisor"
                 class="box-border w-full h-[1px] shrink-0 bg-[#1E33221F]"
@@ -1226,20 +1258,20 @@
                 >
                   03
                 </div>
-                <div
+                <h3
                   data-pencil-name="Pergunta"
                   class="text-[21px]/[normal] box-border [flex:1_1_0] text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left"
                 >
                   As 8 horas presenciais são obrigatórias?
-                </div>
+                </h3>
               </div>
-              <div
+              <p
                 data-pencil-name="Resposta"
                 class="text-[15px]/[24px] box-border w-full text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
               >
                 Sim. O encontro prático é obrigatório para conclusão do curso e emissão do
                 certificado de 20 horas.
-              </div>
+              </p>
               <div
                 data-pencil-name="Divisor"
                 class="box-border w-full h-[1px] shrink-0 bg-[#1E33221F]"
@@ -1264,20 +1296,20 @@
                 >
                   04
                 </div>
-                <div
+                <h3
                   data-pencil-name="Pergunta"
                   class="text-[21px]/[normal] box-border [flex:1_1_0] text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left"
                 >
                   Como é emitido o certificado?
-                </div>
+                </h3>
               </div>
-              <div
+              <p
                 data-pencil-name="Resposta"
                 class="text-[15px]/[24px] box-border w-full text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
               >
                 Após frequência mínima e aprovação na avaliação final, o certificado é emitido em
                 formato digital e pode ser validado pela instituição.
-              </div>
+              </p>
               <div
                 data-pencil-name="Divisor"
                 class="box-border w-full h-[1px] shrink-0 bg-[#1E33221F]"
@@ -1297,20 +1329,20 @@
                 >
                   05
                 </div>
-                <div
+                <h3
                   data-pencil-name="Pergunta"
                   class="text-[21px]/[normal] box-border [flex:1_1_0] text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left"
                 >
                   A apostila é impressa ou digital?
-                </div>
+                </h3>
               </div>
-              <div
+              <p
                 data-pencil-name="Resposta"
                 class="text-[15px]/[24px] box-border w-full text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
               >
                 Digital, em PDF, liberada junto com o acesso à plataforma e disponível por 12 meses
                 a partir da matrícula.
-              </div>
+              </p>
               <div
                 data-pencil-name="Divisor"
                 class="box-border w-full h-[1px] shrink-0 bg-[#1E33221F]"
@@ -1330,20 +1362,20 @@
                 >
                   06
                 </div>
-                <div
+                <h3
                   data-pencil-name="Pergunta"
                   class="text-[21px]/[normal] box-border [flex:1_1_0] text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left"
                 >
                   Posso parcelar a matrícula?
-                </div>
+                </h3>
               </div>
-              <div
+              <p
                 data-pencil-name="Resposta"
                 class="text-[15px]/[24px] box-border w-full text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
               >
                 Sim. Condições de pagamento, datas das turmas e o local do encontro presencial são
                 informados no pré-cadastro.
-              </div>
+              </p>
               <div
                 data-pencil-name="Divisor"
                 class="box-border w-full h-[1px] shrink-0 bg-[#1E33221F]"
@@ -1363,19 +1395,19 @@
         >
           MATRÍCULA ABERTA · PRÓXIMAS TURMAS
         </div>
-        <div
+        <h2
           data-pencil-name="Título"
           class="text-[52px]/[58px] box-border w-[880px] text-[#FFFFFF] font-[Newsreader,system-ui,sans-serif] font-medium text-center"
         >
           Sua próxima coleta pode ser a que nunca dá retrabalho.
-        </div>
-        <div
+        </h2>
+        <p
           data-pencil-name="Subtítulo"
           class="text-[16.5px]/[26px] box-border w-[640px] text-[#FFFFFFB8] font-[Inter,system-ui,sans-serif] font-normal text-center"
         >
           Faça o pré-cadastro e receba datas, valores, local do encontro presencial e o link de
           matrícula.
-        </div>
+        </p>
         <div
           data-pencil-name="Ações"
           class="box-border w-fit h-fit shrink-0 flex flex-row gap-[14px] justify-start items-center"
@@ -1459,8 +1491,17 @@
             </div>
           </div>
         </div>
+        <p class="cta-contato" data-pencil-name="Contato do CTA">
+          Prefere conversar antes? Escreva para
+          <a href="mailto:cursoslivresdasaude@gmail.com">cursoslivresdasaude@gmail.com</a>
+          ou chame no
+          <a href="https://www.instagram.com/cleber_rochabios/" target="_blank" rel="noopener noreferrer"
+            >Instagram @cleber_rochabios</a
+          >.
+        </p>
       </div>
-      <div
+      </main>
+      <footer
         data-pencil-name="Rodapé"
         class="box-border w-full h-fit shrink-0 flex flex-col gap-[36px] p-[56px_80px_40px_80px] justify-start items-start"
       >
@@ -1478,12 +1519,29 @@
             >
               Coleta de Material Biológico
             </div>
-            <div
+            <p
               data-pencil-name="Descrição"
               class="text-[14px]/[22px] box-border w-[380px] text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
             >
               Capacitação profissional na modalidade curso livre, 20 horas, formato híbrido.
-            </div>
+            </p>
+            <address
+              class="contato-rodape"
+              data-pencil-name="Contato"
+            >
+              <a
+                class="contato-rodape__link"
+                href="mailto:cursoslivresdasaude@gmail.com"
+                >cursoslivresdasaude@gmail.com</a
+              >
+              <a
+                class="contato-rodape__link"
+                href="https://www.instagram.com/cleber_rochabios/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >@cleber_rochabios</a
+              >
+            </address>
           </div>
           <div
             data-pencil-name="Links do Rodapé"
@@ -1611,25 +1669,13 @@
             Curso livre · 20h · Capacitação profissional
           </div>
         </div>
-      </div>
+      </footer>
     </div>
-  <script>
-    (function () {
-      var root = document.getElementById("page-root");
-      var DESIGN_WIDTH = 1440;
-      function fit() {
-        var scale = Math.min(1, document.documentElement.clientWidth / DESIGN_WIDTH);
-        if (CSS.supports("zoom", "1")) {
-          root.style.zoom = scale;
-        } else {
-          root.style.transform = scale < 1 ? "scale(" + scale + ")" : "";
-          document.body.style.height = scale < 1 ? root.getBoundingClientRect().height + "px" : "";
-        }
-      }
-      window.addEventListener("resize", fit);
-      window.addEventListener("load", fit);
-      fit();
-    })();
-  </script>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <div class="mobile-cta">
+      <a class="mobile-cta__primary" href="#pre-cadastro">Garantir minha vaga</a>
+      <a class="mobile-cta__ghost" href="mailto:cursoslivresdasaude@gmail.com">Falar por e-mail</a>
+    </div>
   </body>
 </html>
