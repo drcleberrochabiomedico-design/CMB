@@ -1,0 +1,3116 @@
+{
+  "version": "2.14",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Frame",
+      "clip": true,
+      "width": 800,
+      "height": 600,
+      "fill": "#FFFFFF",
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "PGhJN",
+      "x": 920,
+      "y": 0,
+      "name": "Página de Vendas — CMB",
+      "clip": true,
+      "width": 1440,
+      "fill": "$surface",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "rLfO3",
+          "name": "Nav",
+          "width": "fill_container",
+          "padding": [
+            26,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "lLd35",
+              "name": "Marca",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "GyRPG",
+                  "name": "Símbolo",
+                  "width": 34,
+                  "height": 34,
+                  "fill": "$accent",
+                  "cornerRadius": 6,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "u9QVX",
+                      "name": "Sigla",
+                      "fill": "$text-inverse",
+                      "content": "CMB",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "neETv",
+                  "name": "Nome",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xvK4O",
+                      "name": "Título da marca",
+                      "fill": "$text-primary",
+                      "content": "Coleta de Material Biológico",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "rdS17",
+                      "name": "Subtítulo da marca",
+                      "fill": "$text-muted",
+                      "content": "CAPACITAÇÃO PROFISSIONAL",
+                      "fontFamily": "$font-body",
+                      "fontSize": 10.5,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.6
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "X3Iuh",
+              "name": "Links",
+              "gap": 34,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MxGSk",
+                  "name": "Link O curso",
+                  "fill": "$text-secondary",
+                  "content": "O curso",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "TrHLL",
+                  "name": "Link Formato",
+                  "fill": "$text-secondary",
+                  "content": "Formato",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "IPZA9",
+                  "name": "Link Ementa",
+                  "fill": "$text-secondary",
+                  "content": "Ementa",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "o4XvQj",
+                  "name": "Link Certificado",
+                  "fill": "$text-secondary",
+                  "content": "Certificado",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "p8vUw4",
+                  "name": "Link FAQ",
+                  "fill": "$text-secondary",
+                  "content": "FAQ",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dCI5Z",
+              "name": "Botão Inscreva-se",
+              "fill": "$accent",
+              "cornerRadius": 6,
+              "padding": [
+                11,
+                22
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XiB7B",
+                  "name": "Rótulo",
+                  "fill": "$text-inverse",
+                  "content": "Inscreva-se",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "H8amaP",
+          "name": "Hero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 56,
+          "padding": [
+            76,
+            80,
+            56,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "d1EYA",
+              "name": "Conteúdo do Hero",
+              "width": "fill_container",
+              "gap": 72,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PQogp",
+                  "name": "Bloco de Título",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 26,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Fj8n0",
+                      "name": "Eyebrow",
+                      "fill": "$text-muted",
+                      "content": "CAPACITAÇÃO PROFISSIONAL · CURSO LIVRE · MODALIDADE HÍBRIDA",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11.5,
+                      "fontWeight": "500",
+                      "letterSpacing": 2.6
+                    },
+                    {
+                      "type": "text",
+                      "id": "M9aNu",
+                      "name": "Título Principal",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Coleta de Material Biológico",
+                      "lineHeight": 1.03,
+                      "fontFamily": "$font-heading",
+                      "fontSize": 70,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mH4y0",
+                      "name": "Marca de Figura",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "wMhU7",
+                          "name": "Régua",
+                          "fill": "$text-muted",
+                          "width": 36,
+                          "height": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "Ovkli",
+                          "name": "Legenda da Figura",
+                          "fill": "$text-muted",
+                          "content": "FIG. 01 — 20 HORAS · 8 PRESENCIAIS + 12 ON-LINE",
+                          "fontFamily": "$font-body",
+                          "fontSize": 11,
+                          "fontWeight": "normal",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "w8S2i",
+                  "name": "Bloco de Ação",
+                  "width": 420,
+                  "layout": "vertical",
+                  "gap": 26,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ZH4yX",
+                      "name": "Descritor",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Aprenda a coletar, identificar, acondicionar e transportar amostras biológicas com segurança, rastreabilidade e conformidade normativa. Uma trilha prática, do primeiro tubo ao encaminhamento da amostra.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BygL2",
+                      "name": "Fatos",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "QwXm6",
+                          "name": "Fato",
+                          "width": "fill_container",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "id": "Idfcz",
+                              "name": "Traço",
+                              "fill": "$text-muted",
+                              "width": 16,
+                              "height": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "Z7y19Y",
+                              "name": "Texto",
+                              "fill": "$text-primary",
+                              "content": "20 horas de carga horária certificada",
+                              "fontFamily": "$font-body",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "rEYDh",
+                          "name": "Fato",
+                          "width": "fill_container",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "id": "IwtSq",
+                              "name": "Traço",
+                              "fill": "$text-muted",
+                              "width": 16,
+                              "height": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "LOTyO",
+                              "name": "Texto",
+                              "fill": "$text-primary",
+                              "content": "12h on-line sob demanda + 8h presenciais",
+                              "fontFamily": "$font-body",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "S1iYd",
+                          "name": "Fato",
+                          "width": "fill_container",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "id": "TrFAW",
+                              "name": "Traço",
+                              "fill": "$text-muted",
+                              "width": 16,
+                              "height": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "eINa7",
+                              "name": "Texto",
+                              "fill": "$text-primary",
+                              "content": "Apostila digital e checklist de coleta inclusos",
+                              "fontFamily": "$font-body",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "irg0N",
+                      "name": "Ações",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "rT2v7",
+                          "name": "Botão Primário",
+                          "fill": "$accent",
+                          "cornerRadius": 6,
+                          "padding": [
+                            15,
+                            30
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "i4gYw",
+                              "name": "Rótulo",
+                              "fill": "$text-inverse",
+                              "content": "Garantir minha vaga",
+                              "fontFamily": "$font-body",
+                              "fontSize": 15,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "gq5t5",
+                          "name": "Botão Secundário",
+                          "cornerRadius": 9999,
+                          "stroke": "#1E332255",
+                          "strokeWidth": 1,
+                          "padding": [
+                            14,
+                            26
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ReKUg",
+                              "name": "Rótulo",
+                              "fill": "$text-primary",
+                              "content": "Ver ementa",
+                              "fontFamily": "$font-body",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "L0D0z8",
+                      "name": "Nota",
+                      "fill": "$text-muted",
+                      "content": "Matrícula on-line · Vagas limitadas por turma",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "VpMOh",
+          "name": "Zona Fotográfica",
+          "metadata": {
+            "type": "unsplash",
+            "username": "amdela",
+            "link": "https://unsplash.com/@amdela",
+            "author": "Eka P. Amdela"
+          },
+          "clip": true,
+          "width": "fill_container",
+          "height": 560,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1629022895694-70e119e33eac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTExMzU3ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "layout": "vertical",
+          "padding": [
+            48,
+            80
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "JjYsH",
+              "layoutPosition": "absolute",
+              "x": 760,
+              "y": -300,
+              "name": "Arco técnico",
+              "fill": "#00000000",
+              "width": 760,
+              "height": 760,
+              "stroke": "#FFFFFF26",
+              "strokeWidth": 1
+            },
+            {
+              "type": "ellipse",
+              "id": "DGT1u",
+              "layoutPosition": "absolute",
+              "x": 560,
+              "y": -480,
+              "name": "Arco técnico 2",
+              "fill": "#00000000",
+              "width": 1120,
+              "height": 1120,
+              "stroke": "#FFFFFF14",
+              "strokeWidth": 1
+            },
+            {
+              "type": "frame",
+              "id": "H9rfq",
+              "layoutPosition": "absolute",
+              "x": 34,
+              "y": 250,
+              "name": "Indicadores",
+              "layout": "vertical",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "G6n7H",
+                  "name": "Indicador 1",
+                  "fill": "#FFFFFF",
+                  "width": 7,
+                  "height": 7
+                },
+                {
+                  "type": "ellipse",
+                  "id": "qXkqU",
+                  "name": "Indicador 2",
+                  "fill": "#FFFFFF59",
+                  "width": 6,
+                  "height": 6
+                },
+                {
+                  "type": "ellipse",
+                  "id": "LiVAH",
+                  "name": "Indicador 3",
+                  "fill": "#FFFFFF59",
+                  "width": 6,
+                  "height": 6
+                },
+                {
+                  "type": "ellipse",
+                  "id": "Ydw8p",
+                  "name": "Indicador 4",
+                  "fill": "#FFFFFF59",
+                  "width": 6,
+                  "height": 6
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "s1s6V6",
+              "name": "Overlay Flutuante",
+              "width": 900,
+              "fill": "$surface-inverse",
+              "cornerRadius": 6,
+              "effect": [
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#00000008",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 6
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#00000012",
+                  "offset": {
+                    "x": 0,
+                    "y": 16
+                  },
+                  "blur": 40
+                }
+              ],
+              "gap": 22,
+              "padding": [
+                42,
+                52
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XatUc",
+                  "name": "Estatística 12h",
+                  "width": 235,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "oHYCJ",
+                      "name": "Valor",
+                      "fill": "$text-inverse",
+                      "content": "12h",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 46,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ubrv5",
+                      "name": "Descrição",
+                      "fill": "#FFFFFFB3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Aula on-line sob demanda",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 13.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "uO6Eo",
+                  "name": "Divisor 0",
+                  "fill": "#FFFFFF2E",
+                  "width": 1,
+                  "height": 64
+                },
+                {
+                  "type": "frame",
+                  "id": "TV3TS",
+                  "name": "Estatística 8h",
+                  "width": 235,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jhCWf",
+                      "name": "Valor",
+                      "fill": "$text-inverse",
+                      "content": "8h",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 46,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "YgSqG",
+                      "name": "Descrição",
+                      "fill": "#FFFFFFB3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Encontro presencial prático",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 13.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "v0jTv",
+                  "name": "Divisor 1",
+                  "fill": "#FFFFFF2E",
+                  "width": 1,
+                  "height": 64
+                },
+                {
+                  "type": "frame",
+                  "id": "bSYjC",
+                  "name": "Estatística 20h",
+                  "width": 235,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "K7WAw",
+                      "name": "Valor",
+                      "fill": "$text-inverse",
+                      "content": "20h",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 46,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "p7q80",
+                      "name": "Descrição",
+                      "fill": "#FFFFFFB3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Certificado de conclusão",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 13.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fkBu4",
+          "name": "Seção 01 — O Curso",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 56,
+          "padding": [
+            96,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "hx0uQ",
+              "name": "Cabeçalho",
+              "width": "fill_container",
+              "gap": 72,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "es6zT",
+                  "name": "Coluna Título",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 22,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CoQis",
+                      "name": "Índice",
+                      "fill": "$text-muted",
+                      "content": "01 — O CURSO",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11.5,
+                      "fontWeight": "500",
+                      "letterSpacing": 2.6
+                    },
+                    {
+                      "type": "text",
+                      "id": "zxmwm",
+                      "name": "Título da Seção",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Norma, técnica e responsabilidade em cada coleta.",
+                      "lineHeight": 1.15,
+                      "fontFamily": "$font-heading",
+                      "fontSize": 42,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QeIiU",
+                  "name": "Coluna Descritiva",
+                  "width": 480,
+                  "layout": "vertical",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yLyum",
+                      "name": "Parágrafo 1",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "O material biológico mal coletado compromete o exame, atrasa o diagnóstico e gera retrabalho. Este curso prepara o profissional para executar a coleta com padrão, do identifique do paciente até o acondicionamento da amostra.",
+                      "lineHeight": 1.65,
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "azSjY",
+                      "name": "Parágrafo 2",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A trilha é híbrida: você assiste à parte conceitual no seu ritmo e vive o prático no laboratório, com supervisão e checklist em mãos.",
+                      "lineHeight": 1.65,
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Pi1py",
+              "name": "Resultados",
+              "width": "fill_container",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "HAB0Z",
+                  "name": "Resultado 01",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "tqrds",
+                      "name": "Linha superior",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "BcA0h",
+                          "name": "Número",
+                          "fill": "$text-muted",
+                          "content": "01",
+                          "fontFamily": "$font-body",
+                          "fontSize": 11.5,
+                          "fontWeight": "500",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "c2ncI",
+                          "name": "Régua",
+                          "fill": "#1E332224",
+                          "width": "fill_container",
+                          "height": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "o36bHa",
+                      "name": "Título",
+                      "fill": "$text-primary",
+                      "content": "Coleta sem retrabalho",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 24,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Dgfot",
+                      "name": "Descrição",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Sequência padronizada de coleta, identificação e verificação da integralidade da amostra.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "FHv1e",
+                  "name": "Resultado 02",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "s7R7e3",
+                      "name": "Linha superior",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ejXTU",
+                          "name": "Número",
+                          "fill": "$text-muted",
+                          "content": "02",
+                          "fontFamily": "$font-body",
+                          "fontSize": 11.5,
+                          "fontWeight": "500",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "DdgP7",
+                          "name": "Régua",
+                          "fill": "#1E332224",
+                          "width": "fill_container",
+                          "height": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "pHqqX",
+                      "name": "Título",
+                      "fill": "$text-primary",
+                      "content": "Segurança em 360°",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 24,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xEIWt",
+                      "name": "Descrição",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Normas de biossegurança, uso de EPI, conduta ante acidentes com material biológico.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "t8Eb42",
+                  "name": "Resultado 03",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "n9Wel",
+                      "name": "Linha superior",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cKSkk",
+                          "name": "Número",
+                          "fill": "$text-muted",
+                          "content": "03",
+                          "fontFamily": "$font-body",
+                          "fontSize": 11.5,
+                          "fontWeight": "500",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "N2q0u",
+                          "name": "Régua",
+                          "fill": "#1E332224",
+                          "width": "fill_container",
+                          "height": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "NmuVV",
+                      "name": "Título",
+                      "fill": "$text-primary",
+                      "content": "Rastreabilidade real",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 24,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "M9pBH",
+                      "name": "Descrição",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Pré-analítico sob controle: etiquetagem, cadeia frio, transporte e recusa de amostra.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "D1PhNP",
+          "name": "Seção 02 — Formato Híbrido",
+          "width": "fill_container",
+          "fill": "$surface-tint",
+          "layout": "vertical",
+          "gap": 52,
+          "padding": [
+            96,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "nFIjV",
+              "name": "Índice",
+              "fill": "$text-muted",
+              "content": "02 — FORMATO HÍBRIDO",
+              "fontFamily": "$font-body",
+              "fontSize": 11.5,
+              "fontWeight": "500",
+              "letterSpacing": 2.6
+            },
+            {
+              "type": "text",
+              "id": "D46EE3",
+              "name": "Título da Seção",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": 940,
+              "content": "12 horas on-line. 8 horas presenciais. 20 horas para aplicar na segunda-feira.",
+              "lineHeight": 1.15,
+              "fontFamily": "$font-heading",
+              "fontSize": 42,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "itwEw",
+              "name": "Colunas do Formato",
+              "width": "fill_container",
+              "gap": 56,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "zPTVH",
+                  "name": "ON-LINE — SOB DEMANDA",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 26,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Y6BFp9",
+                      "name": "Cabeçalho",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "g6bHn",
+                          "name": "Rótulo",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "tRkEI",
+                              "name": "Modalidade",
+                              "fill": "$text-muted",
+                              "content": "ON-LINE — SOB DEMANDA",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "500",
+                              "letterSpacing": 2.6
+                            },
+                            {
+                              "type": "text",
+                              "id": "XTfq6",
+                              "name": "Título",
+                              "fill": "$text-primary",
+                              "content": "Trilha gravada + atividades",
+                              "fontFamily": "$font-heading",
+                              "fontSize": 30,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "UIG6P",
+                          "name": "Carga",
+                          "fill": "$text-primary",
+                          "content": "12h",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 52,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vV99f",
+                      "name": "Aula 1",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "o8yJb3",
+                          "name": "Linha",
+                          "width": "fill_container",
+                          "gap": 20,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "UJjDZ",
+                              "name": "Num",
+                              "fill": "$text-muted",
+                              "content": "01",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 1.4
+                            },
+                            {
+                              "type": "text",
+                              "id": "e4GES",
+                              "name": "Assunto",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Fundamentos do material biológico e ciclo pré-analítico",
+                              "lineHeight": 1.5,
+                              "fontFamily": "$font-body",
+                              "fontSize": 16,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "VnC8r",
+                              "name": "Duração",
+                              "fill": "$text-secondary",
+                              "content": "3h",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "giqGF",
+                          "name": "Divisor",
+                          "fill": "#1E33221F",
+                          "width": "fill_container",
+                          "height": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "n9swH",
+                      "name": "Aula 2",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "A4ivIm",
+                          "name": "Linha",
+                          "width": "fill_container",
+                          "gap": 20,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "E16dIx",
+                              "name": "Num",
+                              "fill": "$text-muted",
+                              "content": "02",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 1.4
+                            },
+                            {
+                              "type": "text",
+                              "id": "nGvfa",
+                              "name": "Assunto",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Biossegurança, EPI e manejo de resíduos",
+                              "lineHeight": 1.5,
+                              "fontFamily": "$font-body",
+                              "fontSize": 16,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ZoxMc",
+                              "name": "Duração",
+                              "fill": "$text-secondary",
+                              "content": "3h",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "kAVMy",
+                          "name": "Divisor",
+                          "fill": "#1E33221F",
+                          "width": "fill_container",
+                          "height": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YOeIU",
+                      "name": "Aula 3",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "F7xKf",
+                          "name": "Linha",
+                          "width": "fill_container",
+                          "gap": 20,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "T0ROYX",
+                              "name": "Num",
+                              "fill": "$text-muted",
+                              "content": "03",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 1.4
+                            },
+                            {
+                              "type": "text",
+                              "id": "T71ca9",
+                              "name": "Assunto",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Técnicas de coleta: sangue, urina, secreções e swab",
+                              "lineHeight": 1.5,
+                              "fontFamily": "$font-body",
+                              "fontSize": 16,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "R5lJM",
+                              "name": "Duração",
+                              "fill": "$text-secondary",
+                              "content": "3h",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "MLKOp",
+                          "name": "Divisor",
+                          "fill": "#1E33221F",
+                          "width": "fill_container",
+                          "height": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JYOpZ",
+                      "name": "Aula 4",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "IQANl",
+                          "name": "Linha",
+                          "width": "fill_container",
+                          "gap": 20,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "h0P9D",
+                              "name": "Num",
+                              "fill": "$text-muted",
+                              "content": "04",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 1.4
+                            },
+                            {
+                              "type": "text",
+                              "id": "b6NXU9",
+                              "name": "Assunto",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Identificação, acondicionamento e transporte de amostras",
+                              "lineHeight": 1.5,
+                              "fontFamily": "$font-body",
+                              "fontSize": 16,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "pZbZG",
+                              "name": "Duração",
+                              "fill": "$text-secondary",
+                              "content": "3h",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "YR3El",
+                          "name": "Divisor",
+                          "fill": "#1E33221F",
+                          "width": "fill_container",
+                          "height": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "cF0gu",
+                  "name": "Divisor Vertical",
+                  "fill": "#1E33221F",
+                  "width": 1,
+                  "height": 470
+                },
+                {
+                  "type": "frame",
+                  "id": "y9XQm4",
+                  "name": "PRESENCIAL — EM LABORATÓRIO",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 26,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "d8QwrW",
+                      "name": "Cabeçalho",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "o3UB41",
+                          "name": "Rótulo",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "qHky2",
+                              "name": "Modalidade",
+                              "fill": "$text-muted",
+                              "content": "PRESENCIAL — EM LABORATÓRIO",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "500",
+                              "letterSpacing": 2.6
+                            },
+                            {
+                              "type": "text",
+                              "id": "KoFJC",
+                              "name": "Título",
+                              "fill": "$text-primary",
+                              "content": "Encontro prático supervisionado",
+                              "fontFamily": "$font-heading",
+                              "fontSize": 30,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "hp1Hq",
+                          "name": "Carga",
+                          "fill": "$text-primary",
+                          "content": "8h",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 52,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ohjYY",
+                      "name": "Aula 1",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "dWqZa",
+                          "name": "Linha",
+                          "width": "fill_container",
+                          "gap": 20,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "tcnm6",
+                              "name": "Num",
+                              "fill": "$text-muted",
+                              "content": "01",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 1.4
+                            },
+                            {
+                              "type": "text",
+                              "id": "tIByj",
+                              "name": "Assunto",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Montagem de campo, EPI e simulação de coleta",
+                              "lineHeight": 1.5,
+                              "fontFamily": "$font-body",
+                              "fontSize": 16,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "aolyJ",
+                              "name": "Duração",
+                              "fill": "$text-secondary",
+                              "content": "3h",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "cx53j",
+                          "name": "Divisor",
+                          "fill": "#1E33221F",
+                          "width": "fill_container",
+                          "height": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Z8RIBD",
+                      "name": "Aula 2",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Ds4Vr",
+                          "name": "Linha",
+                          "width": "fill_container",
+                          "gap": 20,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "j7kZS",
+                              "name": "Num",
+                              "fill": "$text-muted",
+                              "content": "02",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 1.4
+                            },
+                            {
+                              "type": "text",
+                              "id": "wm5IQ",
+                              "name": "Assunto",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Coleta supervisionada com correção em tempo real",
+                              "lineHeight": 1.5,
+                              "fontFamily": "$font-body",
+                              "fontSize": 16,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "TN0Ci",
+                              "name": "Duração",
+                              "fill": "$text-secondary",
+                              "content": "3h",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "CQKDr",
+                          "name": "Divisor",
+                          "fill": "#1E33221F",
+                          "width": "fill_container",
+                          "height": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "T8MUe",
+                      "name": "Aula 3",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "hxJKM",
+                          "name": "Linha",
+                          "width": "fill_container",
+                          "gap": 20,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dM2Tq",
+                              "name": "Num",
+                              "fill": "$text-muted",
+                              "content": "03",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 1.4
+                            },
+                            {
+                              "type": "text",
+                              "id": "LHGCY",
+                              "name": "Assunto",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Estudo de caso, recusa de amostra e avaliação final",
+                              "lineHeight": 1.5,
+                              "fontFamily": "$font-body",
+                              "fontSize": 16,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "A7iCk",
+                              "name": "Duração",
+                              "fill": "$text-secondary",
+                              "content": "2h",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "aDSQb",
+                          "name": "Divisor",
+                          "fill": "#1E33221F",
+                          "width": "fill_container",
+                          "height": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "MsPZY",
+          "name": "Seção 03 — Incluído",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 52,
+          "padding": [
+            96,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "JWpmU",
+              "name": "Cabeçalho",
+              "width": "fill_container",
+              "gap": 72,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Pdvjr",
+                  "name": "Coluna Título",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 22,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "g4dL5",
+                      "name": "Índice",
+                      "fill": "$text-muted",
+                      "content": "03 — INCLUÍDO NA MATRÍCULA",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11.5,
+                      "fontWeight": "500",
+                      "letterSpacing": 2.6
+                    },
+                    {
+                      "type": "text",
+                      "id": "NyiE0",
+                      "name": "Título da Seção",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Tudo o que o aluno recebe, do primeiro ao último dia.",
+                      "lineHeight": 1.15,
+                      "fontFamily": "$font-heading",
+                      "fontSize": 42,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "BDRac",
+                  "name": "Nota",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 420,
+                  "content": "Sem material adicional a comprar. A apostila e os checklists acompanham a turma por 12 meses.",
+                  "lineHeight": 1.65,
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lmRLZ",
+              "name": "Itens Incluídos",
+              "width": "fill_container",
+              "gap": 44,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "U6LeRU",
+                  "name": "Item 1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "nQBAf",
+                      "name": "Régua",
+                      "fill": "$text-primary",
+                      "width": "fill_container",
+                      "height": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "vlLal",
+                      "name": "Número",
+                      "fill": "$text-muted",
+                      "content": "01",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11.5,
+                      "fontWeight": "500",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "Q10wC",
+                      "name": "Título",
+                      "fill": "$text-primary",
+                      "content": "Apostila digital",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 23,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "h1nvJ",
+                      "name": "Descrição",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "PDF ilustrado com fluxos de coleta, imagens de referência e o passo a passo de cada procedimento.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ooRei",
+                  "name": "Item 2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "EZtlM",
+                      "name": "Régua",
+                      "fill": "$text-primary",
+                      "width": "fill_container",
+                      "height": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "UJMxr",
+                      "name": "Número",
+                      "fill": "$text-muted",
+                      "content": "02",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11.5,
+                      "fontWeight": "500",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "pcj7S",
+                      "name": "Título",
+                      "fill": "$text-primary",
+                      "content": "Checklists de campo",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 23,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "FLazs",
+                      "name": "Descrição",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Modelos prontos de verificação pré-analítica, etiquetagem e condições de transporte.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "HPBdF",
+                  "name": "Item 3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "Q67kr",
+                      "name": "Régua",
+                      "fill": "$text-primary",
+                      "width": "fill_container",
+                      "height": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "Z0b2Hl",
+                      "name": "Número",
+                      "fill": "$text-muted",
+                      "content": "03",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11.5,
+                      "fontWeight": "500",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "vi62g",
+                      "name": "Título",
+                      "fill": "$text-primary",
+                      "content": "Suporte do tutor",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 23,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "XQzno",
+                      "name": "Descrição",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Canal de dúvidas respondido durante toda a trilha on-line e no encontro presencial.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "e2UvQ",
+                  "name": "Item 4",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "G4OhEN",
+                      "name": "Régua",
+                      "fill": "$text-primary",
+                      "width": "fill_container",
+                      "height": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "z4AnB",
+                      "name": "Número",
+                      "fill": "$text-muted",
+                      "content": "04",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11.5,
+                      "fontWeight": "500",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "pOSmi",
+                      "name": "Título",
+                      "fill": "$text-primary",
+                      "content": "Certificado de 20h",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 23,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "qZwR8",
+                      "name": "Descrição",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Emitido após frequência mínima e aprovação na avaliação final da turma.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "s7reY",
+          "name": "Seção 04 — Depoimentos",
+          "width": "fill_container",
+          "fill": "$surface-tint",
+          "layout": "vertical",
+          "gap": 52,
+          "padding": [
+            96,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "M4RvM6",
+              "name": "Índice",
+              "fill": "$text-muted",
+              "content": "04 — QUEM JÁ PASSOU PELA TURMA",
+              "fontFamily": "$font-body",
+              "fontSize": 11.5,
+              "fontWeight": "500",
+              "letterSpacing": 2.6
+            },
+            {
+              "type": "text",
+              "id": "bCPqO",
+              "name": "Título da Seção",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": 860,
+              "content": "A coleta é o começo de tudo. Quem faz, sente a diferença.",
+              "lineHeight": 1.15,
+              "fontFamily": "$font-heading",
+              "fontSize": 42,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "Oricq",
+              "name": "Depoimentos",
+              "width": "fill_container",
+              "gap": 44,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BpBj4",
+                  "name": "Depoimento 1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tt8RM",
+                      "name": "Citação",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "“Entendi finalmente por que a amostra era rejeitada aqui no posto. Reduzimos o retrabalho depois da turma.”",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-heading",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QsR4P",
+                      "name": "Autor",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "l0iLg",
+                          "name": "Nome",
+                          "fill": "$text-primary",
+                          "content": "Mariana R.",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14.5,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "zkXB1",
+                          "name": "Cargo",
+                          "fill": "$text-muted",
+                          "content": "Técnica em enfermagem",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "FiJZD",
+                  "name": "Depoimento 2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NQucH",
+                      "name": "Citação",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "“A parte on-line é direta e o presencial mostra o que o vídeo não mostra: a mão na coleta.”",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-heading",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GEIZz",
+                      "name": "Autor",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "V4XVT",
+                          "name": "Nome",
+                          "fill": "$text-primary",
+                          "content": "Carlos A.",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14.5,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "T2XNwU",
+                          "name": "Cargo",
+                          "fill": "$text-muted",
+                          "content": "Auxiliar de laboratório",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "moCtU",
+                  "name": "Depoimento 3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "iFEGi",
+                      "name": "Citação",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "“A apostila virou referência aqui dentro. Os checklists estão fixados em cada box de coleta.”",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-heading",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Q2YPb",
+                      "name": "Autor",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "k5Jm6",
+                          "name": "Nome",
+                          "fill": "$text-primary",
+                          "content": "Juliana P.",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14.5,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ff3VP",
+                          "name": "Cargo",
+                          "fill": "$text-muted",
+                          "content": "Coordenadora de enfermagem",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jkRRT",
+          "name": "Seção 05 — FAQ",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 52,
+          "padding": [
+            96,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "j71IE",
+              "name": "Cabeçalho",
+              "width": "fill_container",
+              "gap": 72,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Ll2uG",
+                  "name": "Coluna Título",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 22,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "t5fyU",
+                      "name": "Índice",
+                      "fill": "$text-muted",
+                      "content": "05 — PERGUNTAS FREQUENTES",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11.5,
+                      "fontWeight": "500",
+                      "letterSpacing": 2.6
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZVnVk",
+                      "name": "Título da Seção",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Antes de decidir, vale saber.",
+                      "lineHeight": 1.15,
+                      "fontFamily": "$font-heading",
+                      "fontSize": 42,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "R0mKG",
+                  "name": "Nota",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 420,
+                  "content": "Não encontrou sua dúvida? Fale com a coordenação pelo canal de atendimento da instituição.",
+                  "lineHeight": 1.65,
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hRy9h",
+              "name": "Perguntas",
+              "width": "fill_container",
+              "gap": 64,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yGRqT",
+                  "name": "Coluna Esquerda",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 38,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "L7HPiD",
+                      "name": "Pergunta 1",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "W8pEa",
+                          "name": "Linha",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "bSoes",
+                              "name": "Num",
+                              "fill": "$text-muted",
+                              "content": "01",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "500",
+                              "letterSpacing": 2
+                            },
+                            {
+                              "type": "text",
+                              "id": "GWhmm",
+                              "name": "Pergunta",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Preciso ter experiência prévia?",
+                              "fontFamily": "$font-heading",
+                              "fontSize": 21,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "VxA9w",
+                          "name": "Resposta",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Não. A trilha parte dos fundamentos do material biológico e do ciclo pré-analítico, indo até a coleta supervisionada em laboratório.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "vVgLj",
+                          "name": "Divisor",
+                          "fill": "#1E33221F",
+                          "width": "fill_container",
+                          "height": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PBAAG",
+                      "name": "Pergunta 2",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Rrbkx",
+                          "name": "Linha",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "t9zurB",
+                              "name": "Num",
+                              "fill": "$text-muted",
+                              "content": "02",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "500",
+                              "letterSpacing": 2
+                            },
+                            {
+                              "type": "text",
+                              "id": "wrOjl",
+                              "name": "Pergunta",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Como funcionam as 12 horas on-line?",
+                              "fontFamily": "$font-heading",
+                              "fontSize": 21,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZwkJ7",
+                          "name": "Resposta",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Aulas gravadas na plataforma, no seu ritmo, com atividades de verificação ao final de cada módulo e canal de dúvidas com o tutor.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "VzkqA",
+                          "name": "Divisor",
+                          "fill": "#1E33221F",
+                          "width": "fill_container",
+                          "height": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TOBqo",
+                      "name": "Pergunta 3",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "iVhcS",
+                          "name": "Linha",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "FBZFl",
+                              "name": "Num",
+                              "fill": "$text-muted",
+                              "content": "03",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "500",
+                              "letterSpacing": 2
+                            },
+                            {
+                              "type": "text",
+                              "id": "i6RVK",
+                              "name": "Pergunta",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "As 8 horas presenciais são obrigatórias?",
+                              "fontFamily": "$font-heading",
+                              "fontSize": 21,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "m3Bac8",
+                          "name": "Resposta",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Sim. O encontro prático é obrigatório para conclusão do curso e emissão do certificado de 20 horas.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "XNlN4",
+                          "name": "Divisor",
+                          "fill": "#1E33221F",
+                          "width": "fill_container",
+                          "height": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "b6u3r",
+                  "name": "Coluna Direita",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 38,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "LAs8H",
+                      "name": "Pergunta 4",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "kLEy0",
+                          "name": "Linha",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dNoK9",
+                              "name": "Num",
+                              "fill": "$text-muted",
+                              "content": "04",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "500",
+                              "letterSpacing": 2
+                            },
+                            {
+                              "type": "text",
+                              "id": "d8DP0E",
+                              "name": "Pergunta",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Como é emitido o certificado?",
+                              "fontFamily": "$font-heading",
+                              "fontSize": 21,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "lVAmw",
+                          "name": "Resposta",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Após frequência mínima e aprovação na avaliação final, o certificado é emitido em formato digital e pode ser validado pela instituição.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "eRPmp",
+                          "name": "Divisor",
+                          "fill": "#1E33221F",
+                          "width": "fill_container",
+                          "height": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Q2Qhm",
+                      "name": "Pergunta 5",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "YhPU9",
+                          "name": "Linha",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "jxhcp",
+                              "name": "Num",
+                              "fill": "$text-muted",
+                              "content": "05",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "500",
+                              "letterSpacing": 2
+                            },
+                            {
+                              "type": "text",
+                              "id": "LcOdZ",
+                              "name": "Pergunta",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "A apostila é impressa ou digital?",
+                              "fontFamily": "$font-heading",
+                              "fontSize": 21,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "jJZ8M",
+                          "name": "Resposta",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Digital, em PDF, liberada junto com o acesso à plataforma e disponível por 12 meses a partir da matrícula.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "nVmE6",
+                          "name": "Divisor",
+                          "fill": "#1E33221F",
+                          "width": "fill_container",
+                          "height": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "er6BH",
+                      "name": "Pergunta 6",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "vlbZp",
+                          "name": "Linha",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "QPpFn",
+                              "name": "Num",
+                              "fill": "$text-muted",
+                              "content": "06",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "500",
+                              "letterSpacing": 2
+                            },
+                            {
+                              "type": "text",
+                              "id": "wk11a",
+                              "name": "Pergunta",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Posso parcelar a matrícula?",
+                              "fontFamily": "$font-heading",
+                              "fontSize": 21,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "PaniR",
+                          "name": "Resposta",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Sim. Condições de pagamento, datas das turmas e o local do encontro presencial são informados no pré-cadastro.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "D83uBW",
+                          "name": "Divisor",
+                          "fill": "#1E33221F",
+                          "width": "fill_container",
+                          "height": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "l7UzVu",
+          "name": "CTA Final",
+          "width": "fill_container",
+          "fill": "$surface-inverse",
+          "layout": "vertical",
+          "gap": 34,
+          "padding": [
+            104,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "X0k2rz",
+              "name": "Índice",
+              "fill": "#FFFFFF8C",
+              "content": "MATRÍCULA ABERTA · PRÓXIMAS TURMAS",
+              "fontFamily": "$font-body",
+              "fontSize": 11.5,
+              "fontWeight": "500",
+              "letterSpacing": 2.6
+            },
+            {
+              "type": "text",
+              "id": "z5W04Y",
+              "name": "Título",
+              "fill": "$text-inverse",
+              "textGrowth": "fixed-width",
+              "width": 880,
+              "content": "Sua próxima coleta pode ser a que nunca dá retrabalho.",
+              "lineHeight": 1.12,
+              "textAlign": "center",
+              "fontFamily": "$font-heading",
+              "fontSize": 52,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "Y4JEkY",
+              "name": "Subtítulo",
+              "fill": "#FFFFFFB8",
+              "textGrowth": "fixed-width",
+              "width": 640,
+              "content": "Faça o pré-cadastro e receba datas, valores, local do encontro presencial e o link de matrícula.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "$font-body",
+              "fontSize": 16.5,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "rXBMm",
+              "name": "Ações",
+              "gap": 14,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "YfIzk",
+                  "name": "Botão Primário",
+                  "fill": "$accent",
+                  "cornerRadius": 6,
+                  "padding": [
+                    16,
+                    32
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JA4ha",
+                      "name": "Rótulo",
+                      "fill": "$text-inverse",
+                      "content": "Fazer pré-cadastro",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lGVep",
+                  "name": "Botão Secundário",
+                  "cornerRadius": 9999,
+                  "stroke": "#FFFFFF59",
+                  "strokeWidth": 1,
+                  "padding": [
+                    15,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "iPBH5",
+                      "name": "Rótulo",
+                      "fill": "$text-inverse",
+                      "content": "Falar no WhatsApp",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CImiE",
+              "name": "Anotações",
+              "gap": 40,
+              "padding": [
+                18,
+                0,
+                0,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "B6mSm",
+                  "name": "Anotação",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "olWwB",
+                      "name": "Marca",
+                      "fill": "#FFFFFF59",
+                      "width": 5,
+                      "height": 5
+                    },
+                    {
+                      "type": "text",
+                      "id": "O8LQW",
+                      "name": "Texto",
+                      "fill": "#FFFFFF8C",
+                      "content": "20 HORAS · CERTIFICADO",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11.5,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GZRS5",
+                  "name": "Anotação",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "sQezr",
+                      "name": "Marca",
+                      "fill": "#FFFFFF59",
+                      "width": 5,
+                      "height": 5
+                    },
+                    {
+                      "type": "text",
+                      "id": "S9mYM",
+                      "name": "Texto",
+                      "fill": "#FFFFFF8C",
+                      "content": "8H PRESENCIAIS + 12H ON-LINE",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11.5,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "jrs1W",
+                  "name": "Anotação",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "h2IKTs",
+                      "name": "Marca",
+                      "fill": "#FFFFFF59",
+                      "width": 5,
+                      "height": 5
+                    },
+                    {
+                      "type": "text",
+                      "id": "SkDYy",
+                      "name": "Texto",
+                      "fill": "#FFFFFF8C",
+                      "content": "VAGAS LIMITADAS POR TURMA",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11.5,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "TIS6v",
+          "name": "Rodapé",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 36,
+          "padding": [
+            56,
+            80,
+            40,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "eNVSI",
+              "name": "Linha Superior",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ivu8h",
+                  "name": "Marca",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fM76R",
+                      "name": "Nome",
+                      "fill": "$text-primary",
+                      "content": "Coleta de Material Biológico",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Wfi81",
+                      "name": "Descrição",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 380,
+                      "content": "Capacitação profissional na modalidade curso livre, 20 horas, formato híbrido.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "BDFZg",
+                  "name": "Links do Rodapé",
+                  "gap": 56,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "tSUvc",
+                      "name": "CURSO",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NQPEw",
+                          "name": "Título",
+                          "fill": "$text-muted",
+                          "content": "CURSO",
+                          "fontFamily": "$font-body",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "CDMFC",
+                          "name": "O curso",
+                          "fill": "$text-secondary",
+                          "content": "O curso",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "i9PBUG",
+                          "name": "Formato híbrido",
+                          "fill": "$text-secondary",
+                          "content": "Formato híbrido",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "q2M8c",
+                          "name": "Ementa",
+                          "fill": "$text-secondary",
+                          "content": "Ementa",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Q4i5e",
+                          "name": "Certificado",
+                          "fill": "$text-secondary",
+                          "content": "Certificado",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uSK9P",
+                      "name": "ALUNO",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "u3jCSC",
+                          "name": "Título",
+                          "fill": "$text-muted",
+                          "content": "ALUNO",
+                          "fontFamily": "$font-body",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "hF5IO",
+                          "name": "Apostila",
+                          "fill": "$text-secondary",
+                          "content": "Apostila",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "nwvV0",
+                          "name": "Plataforma",
+                          "fill": "$text-secondary",
+                          "content": "Plataforma",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "edaBi",
+                          "name": "Suporte",
+                          "fill": "$text-secondary",
+                          "content": "Suporte",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZSFOa",
+                          "name": "FAQ",
+                          "fill": "$text-secondary",
+                          "content": "FAQ",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "r25ttU",
+                      "name": "INSTITUCIONAL",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "tckyQ",
+                          "name": "Título",
+                          "fill": "$text-muted",
+                          "content": "INSTITUCIONAL",
+                          "fontFamily": "$font-body",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "Trmr5",
+                          "name": "Sobre",
+                          "fill": "$text-secondary",
+                          "content": "Sobre",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "n7IVoC",
+                          "name": "Contato",
+                          "fill": "$text-secondary",
+                          "content": "Contato",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Q5hC9d",
+                          "name": "Política de privacidade",
+                          "fill": "$text-secondary",
+                          "content": "Política de privacidade",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "JZgmU",
+              "name": "Divisor",
+              "fill": "#1E33221F",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "MY288",
+              "name": "Linha Inferior",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "aECjL",
+                  "name": "Copyright",
+                  "fill": "$text-muted",
+                  "content": "© 2026 Coleta de Material Biológico. Todos os direitos reservados.",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "T5xksx",
+                  "name": "Registro",
+                  "fill": "$text-muted",
+                  "content": "Curso livre · 20h · Capacitação profissional",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "surface": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "surface-inverse": {
+      "type": "color",
+      "value": "#1E3322"
+    },
+    "surface-tint": {
+      "type": "color",
+      "value": "#F4F6F3"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#1E3322"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#6B7B6B"
+    },
+    "text-muted": {
+      "type": "color",
+      "value": "#808A80"
+    },
+    "text-inverse": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "accent": {
+      "type": "color",
+      "value": "#2D6B3F"
+    },
+    "font-heading": {
+      "type": "string",
+      "value": "Newsreader"
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "radius-md": {
+      "type": "number",
+      "value": 6
+    },
+    "radius-full": {
+      "type": "number",
+      "value": 9999
+    }
+  },
+  "fileToken": "7aaa5f88-244e-41fa-ad2e-749aaa080552"
+}
