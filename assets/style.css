@@ -880,3 +880,218 @@ button {
     display: none;
   }
 }
+
+/* =========================================================================
+   Copy centralizada + acabamento elegante
+   ========================================================================= */
+
+/* Canvas centralizado em telas mais largas que o layout */
+html {
+  background: #e7eae4;
+}
+
+#page-root {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  box-shadow: 0 40px 120px -60px rgba(30, 51, 34, 0.55);
+}
+
+/* a URL do Tailwind é resolvida a partir de assets/ — corrigimos o caminho */
+[data-pencil-name="Zona Fotográfica"] {
+  background-image: url("hero.jpg");
+}
+
+.scroll-progress {
+  left: 50%;
+  width: min(1440px, 100%);
+  transform: translateX(-50%);
+}
+
+.wa-float {
+  right: max(26px, calc((100vw - 1440px) / 2 + 26px));
+}
+
+/* ---------- Hero: coluna centralizada, texto centrado ---------- */
+[data-pencil-name="Hero"] {
+  position: relative;
+  align-items: center;
+}
+
+[data-pencil-name="Hero"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(78% 130% at 50% -12%, rgba(45, 107, 63, 0.13), rgba(45, 107, 63, 0) 62%);
+  pointer-events: none;
+}
+
+[data-pencil-name="Conteúdo do Hero"] {
+  flex-direction: column;
+  align-items: center;
+}
+
+[data-pencil-name="Conteúdo do Hero"] > * {
+  flex: 0 0 auto;
+}
+
+[data-pencil-name="Bloco de Título"] {
+  align-items: center;
+  text-align: center;
+}
+
+[data-pencil-name="Eyebrow"] {
+  text-align: center;
+}
+
+[data-pencil-name="Título Principal"] {
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+[data-pencil-name="Marca de Figura"] {
+  justify-content: center;
+}
+
+[data-pencil-name="Bloco de Ação"] {
+  width: min(660px, 100%);
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+[data-pencil-name="Descritor"] {
+  text-align: center;
+  text-wrap: pretty;
+}
+
+[data-pencil-name="Fatos"] {
+  align-items: center;
+}
+
+[data-pencil-name="Fato"] {
+  justify-content: center;
+}
+
+[data-pencil-name="Fato"] [data-pencil-name="Texto"] {
+  white-space: normal;
+  text-align: center;
+}
+
+[data-pencil-name="Ações"] {
+  justify-content: center;
+}
+
+[data-pencil-name="Bloco de Ação"] [data-pencil-name="Nota"] {
+  white-space: normal;
+  text-align: center;
+}
+
+/* todo texto interno do hero é centralizado */
+[data-pencil-name="Hero"] [data-pencil-name] {
+  text-align: center;
+}
+
+@media (min-width: 1081px) {
+  [data-pencil-name="Hero"] {
+    padding: 96px 80px 76px;
+  }
+
+  [data-pencil-name="Conteúdo do Hero"] {
+    gap: 46px;
+  }
+}
+
+/* ---------- Cabeçalhos de seção centralizados ---------- */
+main > div > [data-pencil-name="Cabeçalho"] {
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  text-align: center;
+}
+
+main > div > [data-pencil-name="Cabeçalho"] > * {
+  flex: 0 0 auto;
+  width: min(760px, 100%);
+  align-items: center;
+  text-align: center;
+}
+
+main > div > [data-pencil-name="Cabeçalho"] p {
+  text-align: center;
+  text-wrap: pretty;
+}
+
+main > div > [data-pencil-name="Cabeçalho"] [data-pencil-name] {
+  text-align: center;
+}
+
+[data-pencil-name^="Seção"] > [data-pencil-name="Índice"],
+[data-pencil-name^="Seção"] > [data-pencil-name="Título da Seção"] {
+  align-self: center;
+  text-align: center;
+}
+
+[data-pencil-name^="Seção"] > [data-pencil-name="Título da Seção"] {
+  width: min(940px, 100%);
+}
+
+/* Título de seção com régua em degradê */
+[data-pencil-name^="Seção"] [data-pencil-name="Título da Seção"] {
+  position: relative;
+  padding-bottom: 22px;
+  text-align: center;
+  letter-spacing: -0.018em;
+  text-wrap: balance;
+}
+
+[data-pencil-name^="Seção"] [data-pencil-name="Título da Seção"]::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 76px;
+  height: 3px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #2d6b3f, #9dc9ac);
+}
+
+/* ---------- Títulos editoriais ---------- */
+[data-pencil-name="CTA Final"] [data-pencil-name="Título"] {
+  letter-spacing: -0.018em;
+  text-wrap: balance;
+}
+
+/* ---------- Botões com degradê e brilho ---------- */
+[data-pencil-name="Botão Primário"],
+[data-pencil-name="Botão Inscreva-se"],
+.mobile-cta__primary {
+  background: linear-gradient(135deg, #35854d 0%, #2d6b3f 52%, #24552f 100%);
+  box-shadow:
+    0 16px 32px -18px rgba(45, 107, 63, 0.95),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16);
+  transition:
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.25s ease,
+    background-color 0.25s ease,
+    filter 0.25s ease;
+}
+
+[data-pencil-name="Botão Primário"]:hover,
+[data-pencil-name="Botão Inscreva-se"]:hover,
+.mobile-cta__primary:hover {
+  filter: brightness(1.06);
+}
+
+@media (max-width: 640px) {
+  [data-pencil-name="Marca de Figura"] {
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  [data-pencil-name="Legenda da Figura"] {
+    text-align: center;
+  }
+}
