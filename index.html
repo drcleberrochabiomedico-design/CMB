@@ -52,6 +52,32 @@
           "name": "Cursos Livres da Saúde",
           "email": "cursoslivresdasaude@gmail.com",
           "sameAs": ["https://www.instagram.com/cleber_rochabios/"]
+        },
+        "instructor": {
+          "@type": "Person",
+          "name": "Cleber Fernando Rocha",
+          "jobTitle": "Biólogo e biomédico",
+          "description": "Mais de 15 anos em coleta, processamento e transporte de material biológico.",
+          "sameAs": ["https://www.instagram.com/cleber_rochabios/"]
+        },
+        "event": {
+          "@type": "Event",
+          "name": "Coleta de Material Biológico — turma Poços de Caldas (MG)",
+          "startDate": "2027-01-08",
+          "endDate": "2027-01-16",
+          "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "location": {
+            "@type": "Place",
+            "name": "Poços de Caldas — MG",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Poços de Caldas",
+              "addressRegion": "MG",
+              "addressCountry": "BR"
+            }
+          },
+          "description": "12 horas on-line e 8 horas presenciais. Local do encontro a confirmar."
         }
       }
     </script>
@@ -145,6 +171,20 @@
             class="text-[14px]/[normal] box-border text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap] hover:text-[#1E3322]"
           >
             Certificado
+          </a>
+          <a
+            data-pencil-name="Link Instrutor"
+            href="#instrutor"
+            class="text-[14px]/[normal] box-border text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap] hover:text-[#1E3322]"
+          >
+            Instrutor
+          </a>
+          <a
+            data-pencil-name="Link Agenda"
+            href="#agenda"
+            class="text-[14px]/[normal] box-border text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap] hover:text-[#1E3322]"
+          >
+            Agenda
           </a>
           <a
             data-pencil-name="Link FAQ"
@@ -1036,15 +1076,116 @@
         </div>
       </div>
       <div
-        id="depoimentos"
-        data-pencil-name="Seção 04 — Depoimentos"
-        class="box-border w-full h-fit shrink-0 flex flex-col gap-[52px] p-[96px_80px] justify-start items-start bg-[#F4F6F3]"
+        id="instrutor"
+        data-pencil-name="Seção 04 — Instrutor"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[44px] p-[96px_80px] justify-start items-center bg-[#F4F6F3]"
       >
         <div
           data-pencil-name="Índice"
           class="text-[11.5px]/[normal] box-border text-[#808A80] font-[Inter,system-ui,sans-serif] font-medium tracking-[2.6px] text-left [white-space:nowrap]"
         >
-          04 — QUEM JÁ PASSOU PELA TURMA
+          04 — INSTRUTOR
+        </div>
+        <h2
+          data-pencil-name="Título da Seção"
+          class="text-[42px]/[48px] box-border w-[860px] text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left"
+        >
+          Quem vive a rotina de coleta todos os dias.
+        </h2>
+        <div data-pencil-name="Cartão do Instrutor" class="instrutor-card">
+          <div data-pencil-name="Foto" class="instrutor-card__foto">
+            <img
+              src="assets/instrutor-cleber.jpg"
+              alt="Cleber Fernando Rocha ao lado do microscópio no laboratório"
+              width="800"
+              height="1000"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div data-pencil-name="Dados do Instrutor" class="instrutor-card__dados">
+            <div
+              data-pencil-name="Cargo"
+              class="text-[11.5px]/[normal] box-border text-[#808A80] font-[Inter,system-ui,sans-serif] font-medium tracking-[2.6px] text-left [white-space:nowrap]"
+            >
+              BIOLOGO · BIOMÉDICO · COORDENAÇÃO DO CURSO
+            </div>
+            <h3
+              data-pencil-name="Nome"
+              class="text-[34px]/[40px] box-border text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left"
+            >
+              Cleber Fernando Rocha
+            </h3>
+            <p
+              data-pencil-name="Bio"
+              class="text-[16.5px]/[27px] box-border text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
+            >
+              Biólogo e biomédico com mais de 15 anos de experiência em rotina laboratorial e
+              coleta de material biológico.
+            </p>
+            <div
+              data-pencil-name="Credenciais"
+              class="box-border w-fit h-fit shrink-0 flex flex-col gap-[10px] justify-start items-start p-[10px_0px_0px_0px]"
+            >
+              <div
+                data-pencil-name="Credencial"
+                class="box-border w-fit h-fit shrink-0 flex flex-row gap-[12px] justify-start items-center"
+              >
+                <div
+                  data-pencil-name="Traço"
+                  class="box-border w-[16px] shrink-0 h-[1px] bg-[#808A80]"
+                ></div>
+                <div
+                  data-pencil-name="Texto"
+                  class="text-[15px]/[normal] box-border text-[#1E3322] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+                >
+                  +15 anos em rotina laboratorial
+                </div>
+              </div>
+              <div
+                data-pencil-name="Credencial"
+                class="box-border w-fit h-fit shrink-0 flex flex-row gap-[12px] justify-start items-center"
+              >
+                <div
+                  data-pencil-name="Traço"
+                  class="box-border w-[16px] shrink-0 h-[1px] bg-[#808A80]"
+                ></div>
+                <div
+                  data-pencil-name="Texto"
+                  class="text-[15px]/[normal] box-border text-[#1E3322] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+                >
+                  Coleta, identificação e transporte de amostras
+                </div>
+              </div>
+              <div
+                data-pencil-name="Credencial"
+                class="box-border w-fit h-fit shrink-0 flex flex-row gap-[12px] justify-start items-center"
+              >
+                <div
+                  data-pencil-name="Traço"
+                  class="box-border w-[16px] shrink-0 h-[1px] bg-[#808A80]"
+                ></div>
+                <div
+                  data-pencil-name="Texto"
+                  class="text-[15px]/[normal] box-border text-[#1E3322] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+                >
+                  Supervisão prática no encontro presencial
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="depoimentos"
+        data-pencil-name="Seção 05 — Depoimentos"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[52px] p-[96px_80px] justify-start items-start"
+      >
+        <div
+          data-pencil-name="Índice"
+          class="text-[11.5px]/[normal] box-border text-[#808A80] font-[Inter,system-ui,sans-serif] font-medium tracking-[2.6px] text-left [white-space:nowrap]"
+        >
+          05 — QUEM JÁ PASSOU PELA TURMA
         </div>
         <h2
           data-pencil-name="Título da Seção"
@@ -1147,7 +1288,7 @@
       </div>
       <div
         id="faq"
-        data-pencil-name="Seção 05 — FAQ"
+        data-pencil-name="Seção 06 — FAQ"
         class="box-border w-full h-fit shrink-0 flex flex-col gap-[52px] p-[96px_80px] justify-start items-start"
       >
         <div
@@ -1162,7 +1303,7 @@
               data-pencil-name="Índice"
               class="text-[11.5px]/[normal] box-border text-[#808A80] font-[Inter,system-ui,sans-serif] font-medium tracking-[2.6px] text-left [white-space:nowrap]"
             >
-              05 — PERGUNTAS FREQUENTES
+              06 — PERGUNTAS FREQUENTES
             </div>
             <h2
               data-pencil-name="Título da Seção"
@@ -1394,8 +1535,8 @@
                 data-pencil-name="Resposta"
                 class="text-[15px]/[24px] box-border w-full text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left"
               >
-                Sim. Condições de pagamento, datas das turmas e o local do encontro presencial são
-                informados no pré-cadastro.
+                Sim. A primeira turma de 2027 será em Poços de Caldas — MG, de 8 a 16 de
+                janeiro. Valor e forma de pagamento são informados no pré-cadastro.
               </p>
               <div
                 data-pencil-name="Divisor"
@@ -1403,6 +1544,84 @@
               ></div>
             </div>
           </div>
+        </div>
+      </div>
+      <div
+        id="agenda"
+        data-pencil-name="Seção 07 — Agenda"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[44px] p-[96px_80px] justify-start items-center"
+      >
+        <div
+          data-pencil-name="Índice"
+          class="text-[11.5px]/[normal] box-border text-[#808A80] font-[Inter,system-ui,sans-serif] font-medium tracking-[2.6px] text-left [white-space:nowrap]"
+        >
+          07 — AGENDA
+        </div>
+        <h2
+          data-pencil-name="Título da Seção"
+          class="text-[42px]/[48px] box-border w-[860px] text-[#1E3322] font-[Newsreader,system-ui,sans-serif] font-medium text-left"
+        >
+          A primeira turma de 2027 já tem data e lugar.
+        </h2>
+        <div data-pencil-name="Cartão da Turma" class="agenda-card">
+          <div class="agenda-card__selo">
+            <span class="agenda-card__ponto" aria-hidden="true"></span>
+            INSCRIÇÕES ABERTAS
+          </div>
+          <h3 class="agenda-card__titulo">Turma Poços de Caldas — MG</h3>
+          <p class="agenda-card__sub">Sul de Minas · 20 horas · formato híbrido</p>
+          <div class="agenda-card__grid">
+            <div class="agenda-card__item">
+              <span class="agenda-card__label">Data</span>
+              <span class="agenda-card__valor">8 a 16 de janeiro de 2027</span>
+            </div>
+            <div class="agenda-card__item">
+              <span class="agenda-card__label">Cidade</span>
+              <span class="agenda-card__valor">Poços de Caldas — MG</span>
+            </div>
+            <div class="agenda-card__item">
+              <span class="agenda-card__label">Encontro presencial</span>
+              <span class="agenda-card__valor">Local a confirmar</span>
+            </div>
+            <div class="agenda-card__item">
+              <span class="agenda-card__label">Carga horária</span>
+              <span class="agenda-card__valor">12h on-line + 8h presenciais</span>
+            </div>
+          </div>
+          <!-- HOTMART: quando a página de checkout existir, troque o href abaixo pelo link da Hotmart -->
+          <div class="agenda-card__acoes">
+            <a
+              data-pencil-name="Botão Inscreva-se"
+              href="#pre-cadastro"
+              class="box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[16px_32px] justify-start items-center bg-[#2D6B3F] rounded-[6px] transition-opacity hover:opacity-90"
+            >
+              <div
+                data-pencil-name="Rótulo"
+                class="text-[15.5px]/[normal] box-border text-[#FFFFFF] font-[Inter,system-ui,sans-serif] font-medium text-left [white-space:nowrap]"
+              >
+                Garantir minha vaga
+              </div>
+            </a>
+            <a
+              data-pencil-name="Botão Secundário"
+              href="https://wa.me/5514998221029?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20curso%20Coleta%20de%20Material%20Biol%C3%B3gico%20e%20quero%20saber%20mais%20sobre%20a%20turma%20de%20Po%C3%A7os%20de%20Caldas."
+              target="_blank"
+              rel="noopener"
+              class="box-border w-fit shrink-0 h-fit flex flex-row gap-[10px] p-[15px_28px] justify-start items-center [border:1px_solid_#1E332255] rounded-[9999px] transition-opacity hover:opacity-70"
+            >
+              <svg class="icon-wa" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+              <div
+                data-pencil-name="Rótulo"
+                class="text-[15.5px]/[normal] box-border text-[#1E3322] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                Tirar dúvida no WhatsApp
+              </div>
+            </a>
+          </div>
+          <p class="agenda-card__nota">
+            Vagas limitadas por turma. Valor, forma de pagamento e endereço do encontro são
+            informados no pré-cadastro.
+          </p>
         </div>
       </div>
       <div
@@ -1426,14 +1645,14 @@
           data-pencil-name="Subtítulo"
           class="text-[16.5px]/[26px] box-border w-[640px] text-[#FFFFFFB8] font-[Inter,system-ui,sans-serif] font-normal text-center"
         >
-          Faça o pré-cadastro e receba datas, valores, local do encontro presencial e o link de
-          matrícula.
+          Faça o pré-cadastro e receba o valor, as condições de pagamento e o endereço exato do
+          encontro presencial da turma de Poços de Caldas — MG (8 a 16 de janeiro de 2027).
         </p>
         <div
           data-pencil-name="Ações"
           class="box-border w-fit h-fit shrink-0 flex flex-row gap-[14px] justify-start items-center"
         >
-          <!-- SUBSTITUA href pelo link do formulário de inscrição (Google Forms, Hotmart, RD Station...) -->
+          <!-- HOTMART: substituir href pelo link de checkout da Hotmart -->
           <a
             data-pencil-name="Botão Primário"
             href="#pre-cadastro"
@@ -1616,6 +1835,18 @@
                 class="text-[14px]/[normal] box-border text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
               >
                 Certificado
+              </div>
+              <div
+                data-pencil-name="Instrutor"
+                class="text-[14px]/[normal] box-border text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                Instrutor
+              </div>
+              <div
+                data-pencil-name="Agenda"
+                class="text-[14px]/[normal] box-border text-[#6B7B6B] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                Agenda
               </div>
             </div>
             <div
